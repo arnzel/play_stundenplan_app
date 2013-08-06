@@ -1,0 +1,16 @@
+#{extends 'layout/layout.html' /}
+#{set title: results.get(0).tag /}
+<div class="ui-grid-b">
+	#{list items:results, as:'result'}
+	<div class="ui-block-a">
+		<div class="ui-bar ui-bar-e" style="height: 100px;width: 1500px">
+			<b>${result.klasse}</b><br/>
+			${result.raum}<br/>
+			${result.stunde}<br/>
+			${result.lehrer}<br/>
+			${result.unterrichtsfach}
+		</div>
+	</div>
+	#{/list}
+</div>
+<a  href="" data-rel="back" data-role="button">Zurück</a>

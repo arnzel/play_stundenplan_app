@@ -1,0 +1,12 @@
+# Application dependencies
+
+require:
+    - play
+    - play -> crud
+    
+repositories:
+  - modules:
+      type: local
+      artifact: "c:/play_modules/Stundenplan/"
+      contains:
+          - modules -> *     

@@ -1,0 +1,9 @@
+#{extends 'layout/layout.html' /}
+#{set title:'Klassen' /}
+	#{list items:klassen, as:'klasse'}
+		<a href="@{Woche.show(klasse.id,klasse.bezeichnung)}" data-role="button">${klasse}</a>
+	#{/list}
+#{else}
+	Keine Klassen
+#{/else}
+<a  href="" data-rel="back" data-role="button">Zurück</a>

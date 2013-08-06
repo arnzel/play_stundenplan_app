@@ -1,0 +1,6 @@
+#{extends 'layout/layout.html' /}
+#{set title: klassenbezeichnung /}
+	#{list items:tage, as:'tag'}
+		<a href="@{Tage.show(tag.id,params.get('klassenId'))}" data-role="button">${tag}</a>
+	#{/list}
+	<a  href="" data-rel="back" data-role="button">Zurück</a>
