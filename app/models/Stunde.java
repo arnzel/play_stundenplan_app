@@ -10,9 +10,9 @@ import play.db.jpa.Model;
 @Entity
 public class Stunde extends Model{
 	
-	public Date zeitVon;
+	public Date zeitVon = new Date();
 	
-	public Date zeitBis;
+	public Date zeitBis = new Date();
 	
 	@Override
 	public String toString() {

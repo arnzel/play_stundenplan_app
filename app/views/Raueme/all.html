@@ -1,0 +1,9 @@
+#{extends 'layout/layout.html' /}
+#{set title:'Raueme' /}
+	#{list items:raueme, as:'raum'}
+		<a href="@{Woche.showRaum(raum.id,raum.bezeichnung)}" data-role="button">${raum}</a>
+	#{/list}
+#{else}
+	Keine Räume
+#{/else}
+<a  href="" data-rel="back" data-role="button">Zurück</a>

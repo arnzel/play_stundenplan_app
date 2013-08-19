@@ -1,0 +1,9 @@
+#{extends 'layout/layout.html' /}
+#{set title:'Lehrer' /}
+	#{list items:lehrer, as:'l'}
+		<a href="@{Woche.showLehrer(l.id,l.vorname,l.name)}" data-role="button">${l}</a>
+	#{/list}
+#{else}
+	Keine Lehrer
+#{/else}
+<a  href="" data-rel="back" data-role="button">Zurück</a>

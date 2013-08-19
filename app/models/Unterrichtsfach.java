@@ -18,7 +18,7 @@ public class Unterrichtsfach extends Model{
 	
 	@Override
 	public String toString() {
-		return bezeichnung;
+		return kurzname;
 	}
 	
 	

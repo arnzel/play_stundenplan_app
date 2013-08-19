@@ -1,0 +1,342 @@
+Tag(Montag):
+    bezeichnung: "Montag"
+    position: 0
+    
+Tag(Dienstag):
+    bezeichnung: "Dienstag"
+    position: 1
+    
+Tag(Mittwoch):
+    bezeichnung: "Mittwoch"
+    position: 2
+    
+Tag(Donnerstag):
+    bezeichnung: "Donnerstag"
+    position: 3
+    
+Tag(Freitag):
+    bezeichnung: "Freitag"
+    position: 4
+    
+Klasse(IT1b):
+    bezeichnung: "It1-b"
+    
+Raum(R209):
+    bezeichnung: "209"
+    
+Raum(R53):
+    bezeichnung: "53"
+    
+Raum(R217):
+    bezeichnung: "217"
+    
+Raum(R204):
+    bezeichnung: "204"
+    
+Raum(RH21):
+    bezeichnung: "H2.1"                
+    
+Lehrer(lü):
+    kurzname: "Lü"
+    
+Lehrer(ts):
+    kurzname: "Ts"
+    
+Lehrer(sb):
+    kurzname: "Sb"
+    
+Lehrer(bru):
+    kurzname: "Bru" 
+    
+Lehrer(rt):
+    kurzname: "Rt"
+    
+Lehrer(me):
+    kurzname: "Me"
+
+Stunde(stundeEins):
+    zeitVon: '07:45'
+    zeitBis: '08:30'
+
+Stunde(stundeZwei):
+    zeitVon: '08:30'
+    zeitBis: '09:15'
+    
+Stunde(stundeDrei):
+    zeitVon: '09:30'
+    zeitBis: '10:15'  
+    
+Stunde(stundeVier):
+    zeitVon: '10:15'
+    zeitBis: '11:00'
+    
+Stunde(stundeFuenf):
+    zeitVon: '11:30'
+    zeitBis: '12:15'
+
+Stunde(stundeSechs):
+    zeitVon: '12:15'
+    zeitBis: '13:00'
+    
+Stunde(stundeSieben):
+    zeitVon: '13:15'
+    zeitBis: '14:00'
+    
+Stunde(stundeAcht):
+    zeitVon: '14:00'
+    zeitBis: '14:45'                                 
+    
+Unterrichtsfach(FE):
+    kurzname: 'FE'
+    
+Unterrichtsfach(Pro):
+    kurzname: 'Pro'
+    
+Unterrichtsfach(GuS):
+    kurzname: 'GuS'
+    
+Unterrichtsfach(AE):
+    kurzname: 'AE'
+    
+Unterrichtsfach(IT-Syst):
+    kurzname: 'IT-Syst'
+    
+Unterrichtsfach(WuG):
+    kurzname: 'WuG'
+    
+Unterrichtsfach(OrgaGP):
+    kurzname: 'OrgaGP'
+    
+Unterrichtsfach(SuK):
+    kurzname: 'SuK'
+    
+Klasse_Tag_Stunde(Mo3):
+    klasse: [IT1b]
+    tag: [Montag]
+    stunde: [stundeDrei]
+    raum: [R209]
+    lehrer: [ts]
+    unterrichtsfach: [FE]
+    
+Klasse_Tag_Stunde(Mo4):
+    klasse: [IT1b]
+    tag: [Montag]
+    stunde: [stundeVier]
+    raum: [R209]
+    lehrer: [ts]
+    unterrichtsfach: [FE]
+    
+Klasse_Tag_Stunde(Mo5):
+    klasse: [IT1b]
+    tag: [Montag]
+    stunde: [stundeFuenf]
+    raum: [R53]
+    lehrer: [lü]
+    unterrichtsfach: [Pro]
+    
+Klasse_Tag_Stunde(Mo6):
+    klasse: [IT1b]
+    tag: [Montag]
+    stunde: [stundeSechs]
+    raum: [R53]
+    lehrer: [lü]
+    unterrichtsfach: [Pro]
+    
+Klasse_Tag_Stunde(Mo7):
+    klasse: [IT1b]
+    tag: [Montag]
+    stunde: [stundeSieben]
+    raum: [R53]
+    lehrer: [lü]
+    unterrichtsfach: [Pro] 
+    
+Klasse_Tag_Stunde(Mo8):
+    klasse: [IT1b]
+    tag: [Montag]
+    stunde: [stundeAcht]
+    raum: [R53]
+    lehrer: [lü]
+    unterrichtsfach: [Pro] 
+    
+Klasse_Tag_Stunde(Di1):
+    klasse: [IT1b]
+    tag: [Dienstag]
+    stunde: [stundeEins]
+    raum: [R53]
+    lehrer: [sb]
+    unterrichtsfach: [Pro]
+    
+Klasse_Tag_Stunde(Di2):
+    klasse: [IT1b]
+    tag: [Dienstag]
+    stunde: [stundeZwei]
+    raum: [R53]
+    lehrer: [sb]
+    unterrichtsfach: [Pro]
+    
+Klasse_Tag_Stunde(Di3):
+    klasse: [IT1b]
+    tag: [Dienstag]
+    stunde: [stundeDrei]
+    raum: [R53]
+    lehrer: [lü]
+    unterrichtsfach: [Pro] 
+    
+Klasse_Tag_Stunde(Di4):
+    klasse: [IT1b]
+    tag: [Dienstag]
+    stunde: [stundeVier]
+    raum: [R53]
+    lehrer: [lü]
+    unterrichtsfach: [Pro] 
+    
+Klasse_Tag_Stunde(Mi1):
+    klasse: [IT1b]
+    tag: [Mittwoch]
+    stunde: [stundeEins]
+    raum: [R53]
+    lehrer: [bru]
+    unterrichtsfach: [GuS]
+    
+Klasse_Tag_Stunde(Mi2):
+    klasse: [IT1b]
+    tag: [Mittwoch]
+    stunde: [stundeZwei]
+    raum: [R53]
+    lehrer: [lü]
+    unterrichtsfach: [AE]
+    
+Klasse_Tag_Stunde(Mi3):
+    klasse: [IT1b]
+    tag: [Mittwoch]
+    stunde: [stundeDrei]
+    raum: [R53]
+    lehrer: [lü]
+    unterrichtsfach: [AE]
+    
+Klasse_Tag_Stunde(Mi4):
+    klasse: [IT1b]
+    tag: [Mittwoch]
+    stunde: [stundeVier]
+    raum: [R53]
+    lehrer: [lü]
+    unterrichtsfach: [AE]
+    
+Klasse_Tag_Stunde(Mi5):
+    klasse: [IT1b]
+    tag: [Mittwoch]
+    stunde: [stundeFuenf]
+    raum: [R217]
+    lehrer: [sb]
+    unterrichtsfach: [IT-Syst]
+    
+Klasse_Tag_Stunde(Mi6):
+    klasse: [IT1b]
+    tag: [Mittwoch]
+    stunde: [stundeSechs]
+    raum: [R217]
+    lehrer: [sb]
+    unterrichtsfach: [IT-Syst]
+    
+Klasse_Tag_Stunde(Mi7):
+    klasse: [IT1b]
+    tag: [Mittwoch]
+    stunde: [stundeSieben]
+    raum: [R217]
+    lehrer: [sb]
+    unterrichtsfach: [IT-Syst] 
+    
+Klasse_Tag_Stunde(Do1):
+    klasse: [IT1b]
+    tag: [Donnerstag]
+    stunde: [stundeEins]
+    raum: [R204]
+    lehrer: [sb]
+    unterrichtsfach: [WuG]
+    
+Klasse_Tag_Stunde(Do2):
+    klasse: [IT1b]
+    tag: [Donnerstag]
+    stunde: [stundeZwei]
+    raum: [R204]
+    lehrer: [sb]
+    unterrichtsfach: [WuG] 
+    
+Klasse_Tag_Stunde(Do3):
+    klasse: [IT1b]
+    tag: [Donnerstag]
+    stunde: [stundeDrei]
+    raum: [R53]
+    lehrer: [lü]
+    unterrichtsfach: [AE]
+    
+Klasse_Tag_Stunde(Do4):
+    klasse: [IT1b]
+    tag: [Donnerstag]
+    stunde: [stundeVier]
+    raum: [R53]
+    lehrer: [lü]
+    unterrichtsfach: [AE]
+    
+Klasse_Tag_Stunde(Do5):
+    klasse: [IT1b]
+    tag: [Donnerstag]
+    stunde: [stundeFuenf]
+    raum: [R217]
+    lehrer: [rt]
+    unterrichtsfach: [OrgaGP]
+    
+Klasse_Tag_Stunde(Do6):
+    klasse: [IT1b]
+    tag: [Donnerstag]
+    stunde: [stundeSechs]
+    raum: [R217]
+    lehrer: [rt]
+    unterrichtsfach: [OrgaGP]
+    
+Klasse_Tag_Stunde(Do7):
+    klasse: [IT1b]
+    tag: [Donnerstag]
+    stunde: [stundeSieben]
+    raum: [R217]
+    lehrer: [rt]
+    unterrichtsfach: [OrgaGP] 
+    
+Klasse_Tag_Stunde(Fr3):
+    klasse: [IT1b]
+    tag: [Freitag]
+    stunde: [stundeDrei]
+    raum: [R217]
+    lehrer: [ts]
+    unterrichtsfach: [SuK]
+    
+Klasse_Tag_Stunde(Fr4):
+    klasse: [IT1b]
+    tag: [Freitag]
+    stunde: [stundeVier]
+    raum: [R217]
+    lehrer: [ts]
+    unterrichtsfach: [SuK]        
+    
+Klasse_Tag_Stunde(Fr5):
+    klasse: [IT1b]
+    tag: [Freitag]
+    stunde: [stundeVier]
+    raum: [RH21]
+    lehrer: [me]
+    unterrichtsfach: [GuS] 
+    
+Klasse_Tag_Stunde(Fr6):
+    klasse: [IT1b]
+    tag: [Freitag]
+    stunde: [stundeSechs]
+    raum: [RH21]
+    lehrer: [me]
+    unterrichtsfach: [GuS]             
+                 
+                                                                                                    
+        
+                    
+            
+        
+                                         

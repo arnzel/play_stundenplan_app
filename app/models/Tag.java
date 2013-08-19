@@ -13,9 +13,27 @@ public class Tag extends Model{
 	@Column(unique=true)
 	public String bezeichnung;
 	
+	public int position;
+	
+	public String getBezeichnung() {
+		return bezeichnung;
+	}
+
+	public void setBezeichnung(String bezeichnung) {
+		this.bezeichnung = bezeichnung;
+	}
+	
 	@Override
 	public String toString() {
 		return bezeichnung;
+	}
+
+	public int getPosition() {
+		return position;
+	}
+
+	public void setPosition(int position) {
+		this.position = position;
 	}
 
 }

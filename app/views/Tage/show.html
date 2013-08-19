@@ -1,16 +1,32 @@
-#{extends 'layout/layout.html' /}
-#{set title: results.get(0).tag /}
+#{extends 'layout/layout.html' /} 
+#{set title:tagBezeichnung /}
+#{if !results.isEmpty()} 
+
 <div class="ui-grid-b">
 	#{list items:results, as:'result'}
 	<div class="ui-block-a">
-		<div class="ui-bar ui-bar-e" style="height: 100px;width: 1500px">
-			<b>${result.klasse}</b><br/>
-			${result.raum}<br/>
-			${result.stunde}<br/>
-			${result.lehrer}<br/>
-			${result.unterrichtsfach}
+		<div class="ui-bar ui-bar-e" style="height: 75px;width: 1500px"">
+			${new Date(result.stunde.zeitVon.time).format('HH:mm')}<br/>
+			- ${new Date(result.stunde.zeitBis.time).format('HH:mm')}
+		</div>
+	</div>
+	<div class="ui-block-b">
+		<div class="ui-bar ui-bar-e" style="height: 75px; width: 1500px">
+			 ${result.lehrer.kurzname}<br />
+			 ${result.raum.bezeichnung}<br />
+			 ${result.unterrichtsfach.kurzname}
 		</div>
 	</div>
 	#{/list}
 </div>
-<a  href="" data-rel="back" data-role="button">Zurück</a>
+#{/if} 
+#{else}
+<div class="ui-grid-b">
+	<div class="ui-block-a">
+		<div class="ui-bar ui-bar-e" style="height: 25px; width: 1500px">
+			Keine Einträge
+		</div>
+	</div>
+</div>
+#{/else}
+<a href="" data-rel="back" data-role="button">Zurück</a>

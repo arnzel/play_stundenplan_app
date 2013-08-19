@@ -15,7 +15,7 @@ public class Lehrer extends Model{
 	
 	@Override
 	public String toString() {
-		return vorname + " " + name;
+		return kurzname;
 	}
 
 }

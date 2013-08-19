@@ -29,7 +29,7 @@ public class Klasse_Tag_Stunde extends Model{
 	
 	@Override
 	public String toString() {
-		return klasse + "-" + tag + "-" + raum + "-" + stunde;
+		return klasse + "-" + tag + "-" + raum + "-" + stunde + "-" + lehrer + "-" + unterrichtsfach;
 	}
 
 }
