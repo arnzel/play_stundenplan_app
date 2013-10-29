@@ -1,7 +1,7 @@
 #{extends 'layout/layout.html' /}
 #{set title:'Lehrer' /}
 	#{list items:lehrer, as:'l'}
-		<a href="@{Woche.showLehrer(l.id,l.vorname,l.name)}" data-role="button">${l}</a>
+		<a href="@{Woche.showLehrer(l.id,l.vorname,l.name)}" data-role="button" data-ajax="false">${l}</a>
 	#{/list}
 #{else}
 	Keine Lehrer

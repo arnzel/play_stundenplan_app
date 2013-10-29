@@ -1,5 +1,6 @@
 package models;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 
 import play.db.jpa.Model;
@@ -7,15 +8,18 @@ import play.db.jpa.Model;
 @Entity
 public class Lehrer extends Model{
 	
-	public String kurzname;
+	@Column(length=5)
+	public String Kurzname;
 	
-	public String name;
+	@Column(length=45)
+	public String Name;
 	
-	public String vorname;
+	@Column(length=45)
+	public String Vorname;
 	
 	@Override
 	public String toString() {
-		return kurzname;
+		return Kurzname;
 	}
 
 }

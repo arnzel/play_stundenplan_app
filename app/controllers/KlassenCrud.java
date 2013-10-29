@@ -6,6 +6,6 @@ import controllers.CRUD.For;
 
 @With(Secure.class)
 @For(value=Klasse.class)
-public class KlassenCrud extends CRUD {
+public class KlassenCRUD extends CRUD {
 
 }

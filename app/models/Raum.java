@@ -10,7 +10,7 @@ import play.db.jpa.Model;
 public class Raum extends Model{
 	
 	@Unique
-	@Column(unique=true)
+	@Column(unique=true,length=10)
 	public String bezeichnung;
 	
 	@Override

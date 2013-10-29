@@ -1,6 +1,6 @@
 #{extends 'layout/layout.html' /}
 #{set title: bezeichnung /}
 	#{list items:tage, as:'tag'}
-		<a href="@{Tage.showLehrer(tag.id,params.get('lehrerId'))}" data-role="button">${tag}</a>
+		<a href="@{Tage.showLehrer(tag.id,params.get('lehrerId'))}" data-role="button" data-ajax="false">${tag}</a>
 	#{/list}
 	<a  href="" data-rel="back" data-role="button">Zurück</a>

@@ -1,7 +1,7 @@
 #{extends 'layout/layout.html' /}
 #{set title:'Raueme' /}
 	#{list items:raueme, as:'raum'}
-		<a href="@{Woche.showRaum(raum.id,raum.bezeichnung)}" data-role="button">${raum}</a>
+		<a href="@{Woche.showRaum(raum.id,raum.bezeichnung)}" data-role="button" data-ajax="false">${raum}</a>
 	#{/list}
 #{else}
 	Keine Räume

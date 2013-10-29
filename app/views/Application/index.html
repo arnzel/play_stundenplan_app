@@ -1,6 +1,8 @@
 #{extends 'layout/layout.html' /}
 #{set title:'Stundenplan Datenbank' /}
-		<a href="@{Klassen.all}" data-role="button">Klassen</a>
-		<a href="@{Raueme.all}" data-role="button">Raum</a>
-		<a href="@{Lehrkraefte.all}" data-role="button">Lehrer</a>
+		<ul data-role="listview" class="ui-listview" data-type="vertical" style="height:100%;">
+		<li><a href="@{Klassen.all}" data-role="button" data-ajax="false">Klassen</a></li>
+		<li><a href="@{Raueme.all}" data-role="button"data-ajax="false">Raum</a></li>
+		<li><a href="@{Lehrkraefte.all}" data-role="button" data-ajax="false">Lehrer</a></li>
+		</ul>
 	</body>

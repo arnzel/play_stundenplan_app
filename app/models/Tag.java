@@ -10,7 +10,7 @@ import play.db.jpa.Model;
 public class Tag extends Model{
 	
 	@Unique
-	@Column(unique=true)
+	@Column(unique=true,length=45)
 	public String bezeichnung;
 	
 	public int position;

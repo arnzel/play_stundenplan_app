@@ -5,14 +5,14 @@
 <div class="ui-grid-b">
 	#{list items:results, as:'result'}
 	<div class="ui-block-a">
-		<div class="ui-bar ui-bar-e" style="height: 75px;width: 1500px"">
+		<div class="ui-bar ui-bar-e" style="height: 60px;width: 1500px"">
 			${new Date(result.stunde.zeitVon.time).format('HH:mm')}<br/>
 			- ${new Date(result.stunde.zeitBis.time).format('HH:mm')}
 		</div>
 	</div>
 	<div class="ui-block-b">
-		<div class="ui-bar ui-bar-e" style="height: 75px; width: 1500px">
-			 ${result.lehrer.kurzname}<br />
+		<div class="ui-bar ui-bar-e" style="height: 60px; width: 1500px">
+			 ${result.lehrer.Kurzname}<br />
 			 ${result.raum.bezeichnung}<br />
 			 ${result.unterrichtsfach.kurzname}
 		</div>

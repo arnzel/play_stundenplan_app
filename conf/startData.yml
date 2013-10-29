@@ -38,21 +38,34 @@ Raum(RH21):
     
 Lehrer(lü):
     kurzname: "Lü"
+    name: "Lührssen"
+    vorname: "Volker"
+    
     
 Lehrer(ts):
     kurzname: "Ts"
+    name: "Tschöcke"
+    vorname: "Kerstin"
     
 Lehrer(sb):
     kurzname: "Sb"
+    name: "Stallbohm"
+    vorname: "Lars"
     
 Lehrer(bru):
-    kurzname: "Bru" 
+    kurzname: "Bru"
+    name: "Bruns"
+    vorname: "Günter" 
     
 Lehrer(rt):
     kurzname: "Rt"
+    name: "Ritter-Fink"
+    vorname: "Annette"
     
 Lehrer(me):
     kurzname: "Me"
+    name: "Meier"
+    vorname: "Stephan"
 
 Stunde(stundeEins):
     zeitVon: '07:45'

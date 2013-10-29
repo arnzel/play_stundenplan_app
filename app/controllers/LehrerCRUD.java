@@ -8,4 +8,6 @@ import controllers.CRUD.For;
 @For(value=Lehrer.class)
 public class LehrerCRUD extends CRUD{
 
+	
+	
 }

@@ -10,7 +10,7 @@ import play.db.jpa.Model;
 public class Klasse extends Model {
 	
 	@Unique
-	@Column(unique=true)
+	@Column(unique=true,length=10,nullable=false)
 	public String bezeichnung;
 	
 	@Override
