@@ -6,9 +6,4 @@ require:
     - play -> secure
     - play -> db 1.1.1
     
-repositories:
-  - modules:
-      type: local
-      artifact: "c:/play_modules/Stundenplan/"
-      contains:
-          - modules -> *     
+   
