@@ -1,0 +1,51 @@
+11-11 10:43:58 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE EVENT (ID BIGINT NOT NULL AUTO_INCREMENT, EVDATUM VARCHAR(19), EVKURZNAME VARCHAR(5), EVRAUM VARCHAR(10), PRIMARY KEY (ID)) TYPE[*]=MYISAM "; SQL statement:
+create table Event (id bigint not null auto_increment, EvDatum varchar(19), EvKurzname varchar(5), EvRaum varchar(10), primary key (id)) type=MyISAM [42000-166]
+11-11 10:43:58 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE KLASSE (ID BIGINT NOT NULL AUTO_INCREMENT, BEZEICHNUNG VARCHAR(10) NOT NULL UNIQUE, PRIMARY KEY (ID)) TYPE[*]=MYISAM "; SQL statement:
+create table Klasse (id bigint not null auto_increment, bezeichnung varchar(10) not null unique, primary key (id)) type=MyISAM [42000-166]
+11-11 10:43:58 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE KLASSE_TAG_STUNDE (ID BIGINT NOT NULL AUTO_INCREMENT, KLASSE_ID BIGINT, LEHRER_ID BIGINT, RAUM_ID BIGINT, STUNDE_ID BIGINT, TAG_ID BIGINT, UNTERRICHTSFACH_ID BIGINT, PRIMARY KEY (ID)) TYPE[*]=MYISAM "; SQL statement:
+create table Klasse_Tag_Stunde (id bigint not null auto_increment, klasse_id bigint, lehrer_id bigint, raum_id bigint, stunde_id bigint, tag_id bigint, unterrichtsfach_id bigint, primary key (id)) type=MyISAM [42000-166]
+11-11 10:43:58 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE LEHRER (ID BIGINT NOT NULL AUTO_INCREMENT, KURZNAME VARCHAR(5), NAME VARCHAR(45), VORNAME VARCHAR(45), PRIMARY KEY (ID)) TYPE[*]=MYISAM "; SQL statement:
+create table Lehrer (id bigint not null auto_increment, Kurzname varchar(5), Name varchar(45), Vorname varchar(45), primary key (id)) type=MyISAM [42000-166]
+11-11 10:43:58 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE RAUM (ID BIGINT NOT NULL AUTO_INCREMENT, BEZEICHNUNG VARCHAR(10) UNIQUE, PRIMARY KEY (ID)) TYPE[*]=MYISAM "; SQL statement:
+create table Raum (id bigint not null auto_increment, bezeichnung varchar(10) unique, primary key (id)) type=MyISAM [42000-166]
+11-11 10:43:58 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE STUNDE (ID BIGINT NOT NULL AUTO_INCREMENT, ZEITBIS DATETIME, ZEITVON DATETIME, PRIMARY KEY (ID)) TYPE[*]=MYISAM "; SQL statement:
+create table Stunde (id bigint not null auto_increment, zeitBis datetime, zeitVon datetime, primary key (id)) type=MyISAM [42000-166]
+11-11 10:43:58 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE TAG (ID BIGINT NOT NULL AUTO_INCREMENT, BEZEICHNUNG VARCHAR(45) UNIQUE, POSITION INTEGER NOT NULL, PRIMARY KEY (ID)) TYPE[*]=MYISAM "; SQL statement:
+create table Tag (id bigint not null auto_increment, bezeichnung varchar(45) unique, position integer not null, primary key (id)) type=MyISAM [42000-166]
+11-11 10:43:58 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE UNTERRICHTSFACH (ID BIGINT NOT NULL AUTO_INCREMENT, BEZEICHNUNG VARCHAR(45) UNIQUE, KURZNAME VARCHAR(10) NOT NULL, PRIMARY KEY (ID)) TYPE[*]=MYISAM "; SQL statement:
+create table Unterrichtsfach (id bigint not null auto_increment, bezeichnung varchar(45) unique, kurzname varchar(10) not null, primary key (id)) type=MyISAM [42000-166]
+11-11 10:43:58 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "KLASSE_TAG_STUNDE" not found; SQL statement:
+alter table Klasse_Tag_Stunde add index FK142EECBA4E36C7BE (klasse_id), add constraint FK142EECBA4E36C7BE foreign key (klasse_id) references Klasse (id) [42102-166]
+11-11 10:43:58 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "KLASSE_TAG_STUNDE" not found; SQL statement:
+alter table Klasse_Tag_Stunde add index FK142EECBA8A87B57E (raum_id), add constraint FK142EECBA8A87B57E foreign key (raum_id) references Raum (id) [42102-166]
+11-11 10:43:58 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "KLASSE_TAG_STUNDE" not found; SQL statement:
+alter table Klasse_Tag_Stunde add index FK142EECBAF1B28736 (unterrichtsfach_id), add constraint FK142EECBAF1B28736 foreign key (unterrichtsfach_id) references Unterrichtsfach (id) [42102-166]
+11-11 10:43:58 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "KLASSE_TAG_STUNDE" not found; SQL statement:
+alter table Klasse_Tag_Stunde add index FK142EECBA7C7FBFDE (lehrer_id), add constraint FK142EECBA7C7FBFDE foreign key (lehrer_id) references Lehrer (id) [42102-166]
+11-11 10:43:58 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "KLASSE_TAG_STUNDE" not found; SQL statement:
+alter table Klasse_Tag_Stunde add index FK142EECBA49EBA9D6 (tag_id), add constraint FK142EECBA49EBA9D6 foreign key (tag_id) references Tag (id) [42102-166]
+11-11 10:43:58 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "KLASSE_TAG_STUNDE" not found; SQL statement:
+alter table Klasse_Tag_Stunde add index FK142EECBA56252FFE (stunde_id), add constraint FK142EECBA56252FFE foreign key (stunde_id) references Stunde (id) [42102-166]
+11-11 10:43:59 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TAG" not found; SQL statement:
+insert into Tag (bezeichnung, position) values (?, ?) [42102-166]
+11-11 10:43:59 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TAG" not found; SQL statement:
+insert into Tag (bezeichnung, position) values (?, ?) [42102-166]
+11-11 10:44:01 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "KLASSE" not found; SQL statement:
+select klasse0_.id as id5_, klasse0_.bezeichnung as bezeichn2_5_ from Klasse klasse0_ [42102-166]
